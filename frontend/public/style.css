@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline;
+}
+
+
+/* navbar */
+.navbar {
+    background-color: transparent;
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 26px;
+    font-style: italic;
+    color: gold !important;
+}
+
+.nav-item {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link {
+    color: rgb(255, 255, 255) !important;
+}
+
+.nav-link {
+    position: relative;
+    padding: 15px 30px;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.nav-link span {
+    position: absolute;
+    display: block;
+}
+
+.nav-link span:nth-child(1) {
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: silver;
+}
+
+.nav-link:hover {
+    color: silver !important;
+}
+
+.nav-link:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+.nav-item {
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.tombol-login {
+    margin-top: 5px;
+    opacity: 50%;
+    color: rgb(255, 255, 255) !important;
+
+}
+
+.tombol-login:hover {
+    opacity: 100%;
+}
+
+
+.notif-panel {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 5px 0;
+    transition: 1000ms;
+    z-index: 3;
+
+}
+
+.notif-panel.active {
+    top: 0;
+}
+
+.notif-panel p {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 8px 10px;
+    text-align: left;
+
+}
+
+.notif-panel p a {
+    text-decoration: none;
+}
+
+.notif-button {
+    background-color: #007bc1;
+    border: 0;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+.jumbotron {
+    font-family: 'Noto Sans', sans-serif;
+    background-image: url(../src/img/img-3.jpg);
+    background-size: cover;
+    text-align: center;
+    height: 720px;
+}
+
+.text-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+}
+
+.text-center p {
+    margin: 20px 5px;
+}
+
+.cta {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 30px;
+    z-index: 1;
+}
+
+.jumbotron-button {
+    text-decoration: none;
+    border: 2px solid #11b9ab;
+    border-radius: 3px;
+    color: white;
+    padding: 15px 18px;
+    text-transform: uppercase;
+}
+
+.jumbotron-button:hover {
+    color: #007bc1;
+    background-color: white;
+}
+
+.color-overlay {
+    background: #007bc1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+}
+
+body {
+    background-color: #e5e5e5;
+}
+
+.my-content {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.highlight-text {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.highlight-text h2 {
+    margin: 20px 5px;
+}
+
+.card {
+    border: 1px solid #007bc1;
+    border-radius: 3px;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    width: 370px;
+    height: 180px;
+    float: left;
+    text-align: justify;
+}
+
+.clear {
+    clear: left;
+}
+
+.news-panel {
+    width: 640px;
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background-color: #007bc1;
+    padding: 5px 0;
+    transition: 1000ms;
+    z-index: 5;
+
+}
+
+.news-panel.active {
+    bottom: 0;
+}
+
+.news-panel h3 {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 8px 20px;
+    text-align: left;
+    color: whitesmoke;
+
+}
+
+.close {
+    font-size: 24px;
+    font-weight: bold;
+    color: whitesmoke;
+    cursor: pointer;
+    float: right;
+    margin: 0 15px;
+}
+
+.close:hover {
+    color: red;
+}
+
+.news-panel p {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 8px 20px;
+    text-align: left;
+    color: whitesmoke;
+}
+
+input {
+    width: 400px;
+    height: 30px;
+    margin: 8px 20px;
+    padding: 0 10px;
+}
+
+.news-panel p a {
+    text-decoration: none;
+}
+
+.news-button {
+    background-color: #cc6600;
+    border: 0;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin: 5px 10px;
+    cursor: pointer;
+    width: 130px;
+}
+
+footer {
+    padding: 20px;
+    color: rgb(132, 163, 247);
+    background-color: #004a75;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+@media (max-width: 550px) {
+    .logo {
+        width: 100px;
+        height: 100px;
+        margin-left: 10px;
+        position: absolute;
+    }
+
+    .cta {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 70px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 960px) {
+    .cta {
+        margin-top: 60px;
+    }
+}
+
+@media (min-width: 720px) {
+    .notif-panel {
+        text-align: center;
+
+    }
+
+    .notif-panel p {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 640px) {
+    .news-panel {
+        width: 400px;
+    }
+
+    input {
+        width: 330px;
+
+    }
+
+    .news-button {
+        width: 350px;
+        margin: 5px 20px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .my-content {
+        width: 400px;
+        margin: auto;
+    }
+
+    .card {
+        width: 350px;
+        height: 140px;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 582px) {
+    .my-content {
+        width: 500px;
+        margin: auto;
+    }
+
+    .card {
+        width: 200px;
+        height: 140px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 583px) and (max-width: 683px) {
+    .my-content {
+        width: 600px;
+        margin: auto;
+    }
+
+    .card {
+        width: 250px;
+        height: 110px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 684px) and (max-width: 960px) {
+    .my-content {
+        width: 700px;
+        margin: auto;
+    }
+
+    .card {
+        width: 300px;
+        height: 100px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 961px) and (max-width: 1188px) {
+    .my-content {
+        width: 900px;
+        margin: auto;
+    }
+
+    .card {
+        width: 250px;
+        height: 140px;
+    }
+
+    .card p {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 1188px) {
+    .my-content {
+        width: 1200px;
+        margin: auto;
+    }
+}
